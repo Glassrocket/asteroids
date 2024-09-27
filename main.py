@@ -48,7 +48,7 @@ def main():
          for shot in shots:
             if shot.collides_with(asteroid):
                   shot.kill()
-                  asteroid.kill()
+                  asteroid.split()
       # Fill the screen with the background color
       screen.fill(BACKGROUND_COLOR)
       # Draws drawable group
